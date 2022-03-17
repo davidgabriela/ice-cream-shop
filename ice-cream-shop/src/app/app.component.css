@@ -1,0 +1,10 @@
+.logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
