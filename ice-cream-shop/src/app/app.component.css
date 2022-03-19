@@ -1,10 +1,60 @@
-.logo {
-    width: 200px;
-    height: 200px;
-    display: flex;
+* {
+  color: rgb(73, 53, 53);
 }
 
-.logo img{
-    height: 100%;
-    width: 100%;
+*:not(.mat-icon) {
+  font-family: Verdana, sans-serif;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar .logo {
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar .icon {
+  width: 450px;
+  flex: 2;
+  text-align: center;
+}
+
+.navbar .icon :hover {
+  color: rgb(200, 149, 149);
+  width: 450px;
+  flex: 2;
+  text-align: center;
+}
+
+.nav-options {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+}
+
+.nav-options a {
+  text-decoration: none;
+  color: currentColor;
+  width: 150px;
+  text-align: center;
+}
+
+.nav-options a:hover {
+  color: rgb(200, 149, 149);
 }
