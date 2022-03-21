@@ -1,6 +1,8 @@
 <h1>Monkey Kreams flavours</h1>
 <div class="items-container">
-    <div *ngFor="let item of items">
+    <div class="item" *ngFor="let item of items">
         <img src="{{item.img_url}}">
+        <h2>{{item.name}}</h2>
+        <h3>{{item.description}}</h3>
     </div>
 </div>
