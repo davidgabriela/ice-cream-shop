@@ -3,7 +3,8 @@
 }
 
 *:not(.mat-icon) {
-  font-family: Verdana, sans-serif;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
 }
 
 .logo {
@@ -18,8 +19,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 300px;
-  padding: 50px;
+  height: 350px;
+  padding: 50px 100px;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -30,21 +31,21 @@
 }
 
 .navbar .icon {
-  width: 450px;
-  flex: 2;
+  flex: 1;
   text-align: center;
 }
 
+.shopping-cart {
+  transform: scale(1.5);
+}
+
 .navbar .icon :hover {
-  color: rgb(200, 149, 149);
-  width: 450px;
-  flex: 2;
-  text-align: center;
+  color: rgb(218, 139, 139);
 }
 
 .nav-options {
   display: flex;
-  flex: 2;
+  flex: 1;
   justify-content: center;
 }
 
@@ -56,5 +57,5 @@
 }
 
 .nav-options a:hover {
-  color: rgb(200, 149, 149);
+  color: rgb(218, 139, 139);
 }
