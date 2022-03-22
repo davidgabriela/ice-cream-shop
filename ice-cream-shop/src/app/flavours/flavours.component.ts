@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FLAVOURS } from './mock-flavours';
+import { FLAVOURS } from '../mock-data/mock-flavours';
 
 @Component({
   selector: 'app-flavours',
@@ -9,7 +9,7 @@ import { FLAVOURS } from './mock-flavours';
 export class FlavoursComponent implements OnInit {
 
   items = FLAVOURS;
-  
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,1 +1,7 @@
-<p>order works!</p>
+<div class="container">
+  <h1>Choose Cones or Cups</h1>
+  <div *ngFor="let cone of cones">
+    <h2>{{ cone.name }}</h2>
+    <h3>{{ cone.description }}</h3>
+  </div>
+</div>
