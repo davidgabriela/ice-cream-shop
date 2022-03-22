@@ -1,12 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(255, 237, 215);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(206, 188, 167);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(163, 145, 125);
+}
 
 html,
 body {
   height: 100%;
-  background-color: rgb(243 227 207);
+  background-color: rgb(255, 237, 215);
+  box-sizing: border-box;
+  overflow-y: visible;
+  
 }
 body {
   margin: 0;
   font-family:"Fredoka", sans-serif;
-  color: rgb(73, 53, 53);
+  color: #523844
+}
+
+.mat-raised-button {
+  font-family:"Fredoka", sans-serif;
+  font-weight: 500;
+  background-color: rgb(251 191 193);
+  color: #523844;
+  font-size: 120%;
+  padding: 10px;
+}
+
+.mat-raised-button:hover {
+  background-color: #ffd48a;
+  color: #524838;
 }
