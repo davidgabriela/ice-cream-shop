@@ -6,12 +6,12 @@ const FlavourSchema = new mongoose.Schema({
     required: [true, "Please add a name"],
     unique: true,
     trim: true,
-    maxlength: [10, "Name cannot be more than 10 characters"],
+    maxlength: [20, "Name cannot be more than 10 characters"],
   },
   description: {
     type: String,
     required: [true, "Please add a description"],
-    maxlength: [20, "Description cannot be more than 20 characters"],
+    maxlength: [100, "Description cannot be more than 100 characters"],
   },
   photo: {
     type: String,

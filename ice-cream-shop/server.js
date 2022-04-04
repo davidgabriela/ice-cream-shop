@@ -1,16 +1,16 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
-const connectDB = require("./config/db");
+const connectDB = require("./server/config/db");
 
 // Load env vars
-dotenv.config({ path: "./config/config.env" });
+dotenv.config({ path: "./server/config/config.env" });
 
 // Connect to DB
 connectDB();
 
 //Route files
-const flavours = require("./routes/flavours");
+const flavours = require("./server/routes/flavours");
 
 const app = express();
 
@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === "development") {
 // Mount routers
 app.use("/api/flavours", flavours);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 const server = app.listen(
   PORT,
